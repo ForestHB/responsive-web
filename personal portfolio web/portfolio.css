@@ -67,21 +67,12 @@ footer {
   line-height: 100px;
   background: #e0ebe8;
   color: #008080;
+  text-align: center;
   text-decoration: none;
 }
 .contact-details:hover {
   background: #E4F1FE;
   color: green;
-}
-@media only screen and (max-width: 340px) {
-  .contact-details {
-    border: 2px solid #90C695;
-    border-radius: 0;
-    width: 90px;
-    height: 20px;
-    padding: 10px;
-    line-height: normal;
-  }
 }
 
 footer a {
@@ -92,4 +83,54 @@ footer a {
   display: inline-flex;
   max-width: 100%;
   height: auto;
+  justify-content: flex-start;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media all and (min-width:820px) and (max-width:1024px) {
+  .welcome {
+    min-height: 40vh;
+    padding-top: 30vh;
+  }
+  .intro-cmt {
+    font-size: 38px;
+  }
+  #package-text {
+    font-size: 26px;
+  }
+  .package, img {
+    max-width: 80%;
+  }
+  .contact-details {
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+    line-height: 80px;
+  }
+}
+
+@media all and (max-width:820px) {
+  .welcome {
+    min-height: 25vh;
+    padding-top: 15vh;
+  }
+  .intro-cmt {
+    font-size: 32px;
+  }
+  #package-text {
+    font-size: 18px;
+  }
+  .package, img {
+    max-width: 40%;
+  }
+  .contact-details {
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+    line-height: 60px;
+  }
 }

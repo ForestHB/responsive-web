@@ -55,6 +55,42 @@ img {
 }
 
 footer {
-  font-size: 32px;
+  font-size: 34px;
   text-align: center;
+}
+
+@media all and (min-width:768px) and (max-width:1024px) {
+  #title {
+    font-size: 25px;
+  }
+  #title-image p {
+    font-size: 25px;
+  }
+  #tribute-info-title {
+    font-size: 25px;
+  }
+  .tribute-info-list {
+    font-size: 12px;
+  }
+  footer {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width:768px) {
+  #title, footer {
+    font-size: 18px;
+  }
+  img {
+    max-width: 50%;
+  }
+  #title-image p {
+    font-size: 13px;
+  }
+  #tribute-info-title {
+    font-size: 20px;
+  }
+  .tribute-info-list {
+    font-size: 10px;
+  }
 }

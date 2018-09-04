@@ -1,3 +1,10 @@
+:root {
+  --price-font-size: 22px;
+  --price-width: 100%;
+  --descript-info-size: 20px;
+  --descript-text-size: 35px;
+}
+
 html {
   text-align: center;
 }
@@ -22,9 +29,7 @@ img {
 .price {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: auto-fit;
-  background-color: lightgray;
-  max-width: 100%;
+  max-width: var(--price-width, 100%);
 }
 
 .price-info {
@@ -32,11 +37,11 @@ img {
 }
 
 .price-top {
-  font-size: 22px;
-    background-color: gray;
+  font-size: var(--price-font-size, 22px);
+  background-color: gray;
  }
  .price-main {
-   font-size: 20px;
+   font-size: var(--price-font-size, 20px);
  }
 
 #form {
@@ -53,12 +58,12 @@ img {
 }
 
 .descript-info {
-  font-size: 20px;
+  font-size: var(--descript-info-size, 20px);
   text-align: left;
 }
 
 .descript-text-strong {
-  font-size: 35px;
+  font-size: var(--descript-text-size: 35px);
   font-weight: bold;
 }
 aside {
@@ -88,29 +93,31 @@ aside {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-
-      @media (max-width: 650px) {
-        flex-direction: column;
-      }
   }
 }
 
-@media (max-width: 1200px) {
-  :root {
-    --penguin-size: 200px;
-    --penguin-skin: gray;
-  }
-}
-@media (max-width: 800px) {
-  :root {
-    --penguin-size: 100px;
-    --penguin-skin: pink;
-  }
-}
 
 .price-submit {
   font-size: 50px;
   width: 150px;
   max-width: 100%;
   height: auto;
+}
+
+@media all and (min-width:768px) and (max-width:1024px) {
+  :root {
+    --price-font-size: 16px;
+    --price-width: 85%;
+    --descript-info-size: 20px;
+    --descript-text-size: 30px;
+  }
+}
+
+@media all and (max-width:768px) {
+  :root {
+    --price-font-size: 10px;
+    --price-width: 60%;
+    --descript-info-size: 15px;
+    --descript-text-size: 25px;
+  }
 }

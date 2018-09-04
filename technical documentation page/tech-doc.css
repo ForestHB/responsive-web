@@ -1,6 +1,13 @@
+:root {
+  --template-column: 300px;
+  --title-size: 40px;
+  --descript-size: 16px;
+  --list-text-size: 14px;
+}
+
 main {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: var(--template-column, 300px) 1fr;
 }
 
 article {
@@ -18,7 +25,7 @@ article {
 }
 
 .doc-title {
-  font-size: 40px;
+  font-size: var(--title-size, 40px);
 }
 
 code{
@@ -36,17 +43,66 @@ code{
 }
 
 .nav-list {
-  min-width:290px;
   top:0px;
   left:0px;
-  width:300px;
+  width:var(--template-column, 300px);
   height:100%;
-  border-right:solid;
   border-color:rgba(0,22,22,0.4);
   display: grid;
 }
 
+.section-name {
+  font-size: 24px;
+}
 
 .nav-link {
   color: gray;
+}
+
+section p {
+  font-size: var(--descript-size, 16px);
+}
+
+li {
+  font-size: var(--list-text-size, 14px);
+}
+
+@media all and (min-width:800px) and (max-width:1024px) {
+  :root {
+    --template-column: 200px;
+    --title-size: 30px;
+    --descript-size: 14px;
+    --list-text-size: 12px;
+  }
+  .nav-link {
+    font-size: 15px;
+  }
+  .section-name {
+    font-size: 20px;
+  }
+  code {
+    line-height: 1.5;
+    padding: 10px;
+    margin: 5px;
+  }
+}
+
+@media all and (max-width:800px) {
+  :root {
+    --template-column: 100px;
+    --title-size: 20px;
+    --descript-size: 12px;
+    --list-text-size: 10px;
+  }
+  .nav-link {
+    font-size: 10px;
+  }
+  .section-name {
+    font-size: 16px;
+  }
+  code {
+    line-height: 1;
+    padding: 5px;
+    margin: 0;
+  }
 }
