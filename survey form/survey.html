@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./survey.css">
+    <title>
+      survey page
+    </title>
+  </head>
+  <body>
+    <header>
+      <div class="penguin">
+        <div class="penguin-bottom">
+          <div class="right-hand"></div>
+          <div class="left-hand"></div>
+          <div class="right-feet"></div>
+          <div class="left-feet"></div>
+        </div>
+        <div class="penguin-top">
+          <div class="right-cheek"></div>
+          <div class="left-cheek"></div>
+          <div class="belly"></div>
+          <div class="right-eye">
+            <div class="sparkle"></div>
+          </div>
+          <div class="left-eye">
+            <div class="sparkle"></div>
+          </div>
+          <div class="blush-right"></div>
+          <div class="blush-left"></div>
+          <div class="beak-top"></div>
+          <div class="beak-bottom"></div>
+        </div>
+      </div>
+      <h1 id="title">
+        Flavor Survey
+      </h1>
+      <h2 class="description"> Hello!</h2>
+      <form>
+        <section class="label-button">
+          <p>Name :<input id="name" type="text" required> </p>
+          <p>Email :<input id="email" type="text" required> </p>
+          <p>Phone-Number :<input id="number" type="text" required> </p>
+        </section>
+      </form>
+    </header>
+    <hr>
+    <main>
+      <form id="survey-form">
+        <section class="label-radio">
+          <p>당신의 성별은? </p>
+          <input name="radio" type="radio" class="radio"> 남성
+          <input name="radio" type="radio" class="radio"> 여성
+        </section>
+        <section class="label-radio">
+          <p>당신은 매운 맛을 좋아하는가? </p>
+          <input name="radio" type="radio" class="radio"> 그렇다
+          <input name="radio" type="radio" class="radio"> 아니다
+        </section>
+        <section class="label-check">
+          <p>위의 질문에서 "그겋다"를 선택했을 경우에 답하시오. <br> 당신이 좋아하는 매운 맛의 정도는(모두 선택 가능)? </p>
+          <p class="check"><input name="checkbox" type="checkbox" value="very-spicy"> 매우 매움</p>
+          <p class="check"><input name="checkbox" type="checkbox" value="middle-spicy"> 중간 매움</p>
+          <p class="check"><input name="checkbox" type="checkbox" value="a-little-spicy"> 약간 매움</p>
+        </section>
+        <section class="label-radio">
+          <p>당신은 단맛을 좋아하는가? </p>
+          <input name="radio" type="radio" class="radio"> 그렇다
+          <input name="radio" type="radio" class="radio"> 아니다
+        </section>
+        <section class="label-check">
+          <p>위의 질문에서 "그겋다"를 선택했을 경우에 답하시오. <br> 당신이 좋아하는 단맛의 정도는(모두 선택 가능)? </p>
+          <p class="check"><input name="checkbox" type="checkbox" value="very-sweet"> 매우 단맛</p>
+          <p class="check"><input name="checkbox" type="checkbox" value="half-sweet"> 중간 단맛</p>
+          <p class="check"><input name="checkbox" type="checkbox" value="a-little-sweet"> 약간 단맛</p>
+        </section>
+        <section class="label-radio">
+          <p>당신은 뜨거운 음식과 차가운 음식 중 무엇을 더 좋아하는가? </p>
+          <input name="radio" type="radio" class="radio"> 뜨거운 음식
+          <input name="radio" type="radio" class="radio"> 둘다 똑같이 좋아함
+          <input name="radio" type="radio" class="radio"> 차가운 음식
+        </section>
+        <section class="label-check">
+          <p> 당신은 수분이 많은 음식과 수분이 적은 음식 중 무엇을 더 좋아하는가(둘 다 선택 가능)?</p>
+          <p class="check"><input name="checkbox" type="checkbox"> 수분이 많은 음식</p>
+          <p class="check"><input name="checkbox" type="checkbox"> 수분이 적은 음식</p>
+        </section>
+        <hr>
+        <footer>
+          <p> Survey End! <br>Let's write Message what you want to send to "Happy Penguin" <textarea></textarea></p>
+          <input type="submit" class="submitBtn" value="Submit">
+        </footer>
+      </form>
+    </main>
+  </body>
+</html>

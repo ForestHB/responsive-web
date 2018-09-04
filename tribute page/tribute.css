@@ -1,0 +1,60 @@
+body {
+  border-radius: 10px;
+  background-color: white;
+}
+
+.main-html{
+  background-color: lightgray;
+}
+
+main {
+  font-family: "Georgia", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  border: 10px solid gray;
+  border-radius: 30px;
+}
+
+header {
+  margin: 5px auto;
+  font-family: "arial", serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+#ititle-image {
+  text-align: center;
+  margin: 20px auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#tribute-info {
+  text-align: left;
+}
+
+.info-category {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+#tribute-info-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Helvetica", sans-serif;
+  background-color: Khaki;
+}
+
+footer {
+  font-size: 32px;
+  text-align: center;
+}
